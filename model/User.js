@@ -18,6 +18,14 @@ const UserSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
+  profilePicture: {
+    type: String,
+    default: "",
+  },
+  publicId: {
+    type: String,
+    default: "",
+  },
   todos: {
     type: [mongoose.Schema.Types.ObjectId],
     ref: "Todo",
